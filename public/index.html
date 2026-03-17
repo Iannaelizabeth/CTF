@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Search</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>User Profile Search</h1>
+      <p>Enter a username to view profile details.</p>
+
+      <form method="GET" action="/search" class="search-form">
+        <label for="username">Username</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="e.g. Admin"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </main>
+  </body>
+</html>

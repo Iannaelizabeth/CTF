@@ -1,0 +1,18 @@
+{
+  "name": "hidden-inspector-ctf",
+  "version": "1.0.0",
+  "description": "CTF challenge: spoof X-Forwarded-For to view admin profile",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ctf",
+    "web",
+    "challenge"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

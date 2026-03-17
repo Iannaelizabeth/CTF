@@ -1,0 +1,121 @@
+:root {
+  --bg1: #f7f3e8;
+  --bg2: #e8efe8;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #52606d;
+  --accent: #b35c1e;
+  --danger: #9b1c1c;
+  --border: #d9e2ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 15% 15%, var(--bg2), transparent 40%),
+    radial-gradient(circle at 85% 80%, #f7ead9, transparent 30%),
+    linear-gradient(135deg, var(--bg1), #d7e7db);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.card {
+  width: min(560px, 100%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  color: var(--muted);
+}
+
+.search-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+button,
+.button {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.75rem 0.9rem;
+  font: inherit;
+}
+
+input:focus {
+  border-color: var(--accent);
+  outline: 2px solid color-mix(in srgb, var(--accent), white 70%);
+}
+
+button,
+.button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.denied h1 {
+  color: var(--danger);
+}
+
+.notifications {
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: #f8fbf9;
+}
+
+.notifications h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.notifications ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.tag {
+  display: inline-block;
+  min-width: 72px;
+  margin-right: 0.35rem;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #3e4c59;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.1rem;
+  }
+}
